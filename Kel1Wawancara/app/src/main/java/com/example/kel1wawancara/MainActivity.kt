@@ -8,17 +8,17 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.example.kel1wawancara.nav.PortfolioApp
-import com.example.kel1wawancara.ui.theme.Kel1WawancaraTheme // Import your new theme!
+import com.example.kel1wawancara.ui.theme.Kel1WawancaraTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            // This is the crucial change: using your custom theme!
+
             Kel1WawancaraTheme {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background // This will now pull "Warm Cream"
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     PortfolioApp()
                 }

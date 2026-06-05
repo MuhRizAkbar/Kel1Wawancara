@@ -142,7 +142,7 @@ fun PortfolioCard(
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface)
     ) {
         Column {
-            // First Local Media: Banner at the top of the card
+
             AsyncImage(
                 model = item.mainMediaUrl,
                 contentDescription = "Primary Local Media",
@@ -159,7 +159,6 @@ fun PortfolioCard(
 
                 Spacer(modifier = Modifier.height(12.dp))
 
-                // Second Local Media: Inset image right inside the card details body
                 AsyncImage(
                     model = item.secondaryMediaUrl,
                     contentDescription = "Secondary Local Media",

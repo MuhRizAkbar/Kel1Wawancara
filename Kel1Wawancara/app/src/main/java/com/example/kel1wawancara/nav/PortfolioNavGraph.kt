@@ -17,7 +17,7 @@ fun PortfolioApp() {
     NavHost(navController = navController, startDestination = "splash") {
         composable("splash") {
             SplashScreen(onNavigateToDashboard = {
-                // Pop splash so user can't hit 'back' to return to it
+
                 navController.navigate("dashboard") {
                     popUpTo("splash") { inclusive = true }
                 }

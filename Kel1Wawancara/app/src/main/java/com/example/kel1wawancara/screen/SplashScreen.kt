@@ -24,11 +24,11 @@ fun SplashScreen(onNavigateToDashboard: () -> Unit) {
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        // Drop your campus logo into 'res/drawable/' (e.g., res/drawable/campus_logo.png)
+
         Image(
             painter = painterResource(id = R.drawable.campus_logo),
             contentDescription = "Campus Logo",
-            modifier = Modifier.size(180.dp), // Easily scale your campus logo here
+            modifier = Modifier.size(180.dp),
             contentScale = ContentScale.Fit
         )
     }

@@ -73,7 +73,6 @@ fun DetailScreen(itemId: Int, onNavigateBack: () -> Unit) {
                     .padding(paddingValues)
                     .verticalScroll(rememberScrollState())
             ) {
-                // Large Local Main Multimedia Header
                 AsyncImage(
                     model = item.mainMediaUrl,
                     contentDescription = "Main Local Showcase Media",
@@ -85,7 +84,7 @@ fun DetailScreen(itemId: Int, onNavigateBack: () -> Unit) {
 
                 Column(modifier = Modifier.padding(16.dp)) {
                     Text(
-                        text = "Project Overview",
+                        text = "Overview Wawancara",
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.Bold,
                         color = MaterialTheme.colorScheme.onBackground
@@ -107,7 +106,6 @@ fun DetailScreen(itemId: Int, onNavigateBack: () -> Unit) {
                     )
                     Spacer(modifier = Modifier.height(8.dp))
 
-                    // Large Local Secondary Multimedia Slot below description text
                     AsyncImage(
                         model = item.secondaryMediaUrl,
                         contentDescription = "Secondary Local Inset Media",
